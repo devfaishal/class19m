@@ -90,7 +90,10 @@ nav a:first-child{
 	margin-top: 47px;
 	cursor: pointer;
 }
-
+.header_btn:hover{
+	background: #fafbfa;
+	color: #dcc8ad;
+}
 /* Service Section */
 .service_secttion {
 	background: #f8f8f8;
@@ -269,46 +272,3 @@ main{
 	color: #fff;
 	padding: 0px 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
