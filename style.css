@@ -28,6 +28,10 @@ body{
 }
 
 /* Header Section */
+.mid_content_h{
+	width: 1250px;
+	margin: auto;
+}
 .header_section {
 	background: url(./img/banner.jpg) center left;
 	background-size: cover;
@@ -59,7 +63,6 @@ figure {
 .fig_img img {
 	width: 270px;
 }
-.header_menu{}
 .header_menu ul{
 	position: relative;
 }
