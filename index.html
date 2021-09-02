@@ -23,18 +23,27 @@
 <body>
   <!-- >>Header Section<< -->
   <header class="header_section">
-    <section class="top_header clear">
-      <figure class="fig_img left">
-        <img src="./img/logo.png" alt="">
-      </figure>
-      <nav class="nav right">
-        <a class="nav-link active" href="#">HOME</a>
-        <a class="nav-link" href="#">ABOUT US</a>
-        <a class="nav-link disabled" href="#">PAGES</a>
-        <a class="nav-link disabled" href="#">BLOG</a>
-        <a class="nav-link disabled" href="#">CONTACT LAYOUT</a>
-      </nav>
-    </section>
+    <div class="mid_content">
+      <section class="top_header clear">
+        <figure class="fig_img left">
+          <img src="./img/logo.png" alt="">
+        </figure>
+        <nav class="header_menu right">
+          <ul>
+            <li><a class="cl_a" href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PAGES <span><i class="fas fa-chevron-down"></i></span></a>
+              <!-- <ul>
+                <li><a href="#">SERVICES <span><i class="fas fa-angle-down"></i></span></a></li>
+                <li><a href="#">RTL TESTED</a></li>
+              </ul> -->
+            </li>
+            <li><a href="#">BLOG <span><i class="fas fa-chevron-down"></i></span></a></li>
+            <li><a href="#">CONTACT LAYOUT <span><i class="fas fa-chevron-down"></i></span></a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
     <section class="Header_banner text_center">
       <h1>Craft Wooden</h1>
       <h2>― HOUSES AND COTTAGES ―</h2>
@@ -42,7 +51,7 @@
     </section>
   </header>
   
-  <!-- Service section -->
+  <!-- >>Service section<< -->
  <section class="service_secttion">
   <main class="clear">
     <article class="card_item text_center left">
