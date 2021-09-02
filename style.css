@@ -59,15 +59,100 @@ figure {
 .fig_img img {
 	width: 270px;
 }
-nav a {
+.header_menu{}
+.header_menu ul{
+	position: relative;
+}
+.header_menu ul li{
+	display: inline-block;
+	position: relative;
+}
+.header_menu ul li a {
 	color: #fff;
 	text-decoration: none;
-	padding: 10px 20px;
-	font-size: 15px;
+	padding: 18px 17px;
+	font-size: 14px;
+	transition: .4s;
 }
-nav a:first-child{
-	color: #c69453;
+nav .cl_a:nth-child(1){
+	color: #c59353;
 }
+.header_menu ul li a:hover{
+	color: #c59353;
+}
+/* Hover Part */
+.header_menu ul li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 244%;
+	background: #c59353;
+	height: 0;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: .4s;
+	transform: scaleX(0);
+	transform-origin: center center;
+}
+.header_menu ul li a:hover::after{
+	opacity: 1;
+	visibility: visible;
+	height: 2px;
+	transform: scaleX(1);
+}
+
+/* DropDown Part */
+.header_menu ul li ul {
+	position: absolute;
+	top: 179%;
+	left: 0;
+	width: 218px;
+	background: #fbfbfa;
+	transition: .6s;
+	opacity: 0;
+	visibility: hidden;
+	transform: scaleY(0);
+	transform-origin: center center;
+	text-align: center;
+}
+.header_menu ul li:hover ul{
+	opacity: 1;
+	visibility: visible;
+	transform: scaleY(1);
+}
+.header_menu ul li ul li {
+	display: block;
+}
+.header_menu .drop_a {
+	color: #7f868f;
+	border: transparent;
+	transition: .5s;
+	display: block;
+}
+.header_menu .drop_a::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #c59353;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+.header_menu ul li ul li a:hover{
+	background: #c9c9c8;
+}
+
+
+
+
+
+
+
+
+
 
 /* Header_banner */
 .Header_banner h1 {
@@ -89,6 +174,7 @@ nav a:first-child{
 	border: none;
 	margin-top: 47px;
 	cursor: pointer;
+	transition: .5s;
 }
 .header_btn:hover{
 	background: #fafbfa;
@@ -152,10 +238,17 @@ main{
 	background: #fbfaf9;
 	color: #e8af5e;
 }
-.card_btn:hover a{
+.card_btn a:hover{
 	background: #000;
-	color: #fff;
-	transform: translate(-10px,50px);
+	color: #cdcdcc;
+}
+.card_btn{
+	width: 112px;
+	margin: auto;
+	transition: .5s;
+}
+.card_btn:hover{
+	transform: translate(0px,10px);
 }
 /* About Section */
 .about_section{
@@ -229,9 +322,6 @@ main{
 	/* outline: none; */
 	
 }
-/* .default_inp:nth-child(5){
-	margin-bottom: 20px;
-} */
 .form_btn {
 	background: #c69453;
 	padding: 16px 25px;
