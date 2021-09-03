@@ -28,9 +28,9 @@ body{
 }
 
 /* Header Section */
-.mid_content_h{
-	width: 1250px;
-	margin: auto;
+.mid_content_h {
+	width: 1200px;
+	margin: 0 46px auto;
 }
 .header_section {
 	background: url(./img/banner.jpg) center left;
@@ -61,7 +61,8 @@ figure {
 	margin-top: -18px;
 }
 .fig_img img {
-	width: 270px;
+	/* width: 270px; */
+	text-align: left;
 }
 .header_menu ul{
 	position: relative;
@@ -130,7 +131,7 @@ nav .cl_a:nth-child(1){
 .header_menu .drop_a {
 	color: #7f868f;
 	border: transparent;
-	transition: .5s;
+	transition: all 1.2s;
 	display: block;
 }
 .header_menu .drop_a::after{
